@@ -1,0 +1,32 @@
+CC = gcc
+CFLAGS = -Wall -g
+
+ASSIGNMENT_PROGS = q1 q2 q3 q4 q5 q6 q7
+
+all: $(ASSIGNMENT_PROGS)
+
+q1: q1.c
+	$(CC) $(CFLAGS) -o q1 q1.c
+
+q2: q2.c
+	$(CC) $(CFLAGS) -o q2 q2.c
+
+q3: q3.c
+	$(CC) $(CFLAGS) -o q3 q3.c
+
+q4: q4.c
+	$(CC) $(CFLAGS) -o q4 q4.c
+
+q5: q5.c
+	$(CC) $(CFLAGS) -o q5 q5.c
+
+q6: q6.c
+	$(CC) $(CFLAGS) -o q6 q6.c
+
+q7: q7.c
+	$(CC) $(CFLAGS) -o q7 q7.c
+
+clean:
+	rm -f $(ASSIGNMENT_PROGS) test_file.txt
+
+.PHONY: all clean
